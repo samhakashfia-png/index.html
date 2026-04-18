@@ -1,0 +1,53 @@
+<div class="hero-bg">
+    <div class="pill">
+        <span class="dot"></span>
+        Undergraduate Senior Year, Department of Mechanical Engineering
+    </div>
+</div>
+
+<style>
+/* ===== Background (dotted grid effect) ===== */
+.hero-bg {
+    padding: 60px;
+    background-color: #020617;
+    background-image: radial-gradient(rgba(0, 234, 255, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* ===== Pill container ===== */
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #7df9ff;
+
+    background: rgba(0, 234, 255, 0.05);
+    border: 1px solid rgba(0, 234, 255, 0.3);
+
+    backdrop-filter: blur(10px);
+    box-shadow: 
+        0 0 10px rgba(0, 234, 255, 0.2),
+        inset 0 0 10px rgba(0, 234, 255, 0.05);
+
+    transition: 0.3s ease;
+}
+
+/* ===== Hover effect ===== */
+.pill:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+}
+
+/* ===== Left glowing dot ===== */
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #00eaff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00eaff;
+}
+</style>
